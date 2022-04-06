@@ -6,7 +6,7 @@ php -r "unlink('composer-setup.php');"
 
 mv composer.phar /usr/local/bin/composer
 
-cp "." "/tests"
+cp ./ /tests
 
 RUN ls -la /tests
 
