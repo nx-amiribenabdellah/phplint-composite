@@ -5,8 +5,8 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 
 mv composer.phar /usr/local/bin/composer
-
-mkdir /phplint && cd /phplint && composer require overtrue/phplint && ln -s /phplint/vendor/bin/phplint /usr/local/bin/phplint
+chmod +x /
+sudo mkdir /phplint && cd /phplint && composer require overtrue/phplint && ln -s /phplint/vendor/bin/phplint /usr/local/bin/phplint
 
 cp "." "/tests"
 
